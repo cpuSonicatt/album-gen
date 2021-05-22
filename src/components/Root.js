@@ -3,19 +3,22 @@ import "../style/root.css"
 import Generate from "name-creator"
 import RandPerson from "node-random-name"
 import { uniqueNamesGenerator, adjectives, animals, colors, languages } from "unique-names-generator"
-import { Person, Album, Image, Cached } from "@material-ui/icons"
+import { Person, Album, Cached } from "@material-ui/icons"
 
+// eslint-disable-next-line no-extend-native
 String.prototype.toProperCase = function () {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
 
+// eslint-disable-next-line no-extend-native
 Number.prototype.between = function (x, y) {
     return (this > x && this < y)
 };
 
+// eslint-disable-next-line no-extend-native
 Array.prototype.shuffle = function() {
     var i = this.length, j, temp;
-    if ( i == 0 ) return this;
+    if ( i === 0 ) return this;
     while ( --i ) {
        j = Math.floor( Math.random() * ( i + 1 ) );
        temp = this[i];
@@ -94,7 +97,7 @@ export default class Root extends Component {
                     {this.state.isLoad ? null :
                         <div className="full"/>
                     }
-                    <img className="cover" onLoad={() => this.setState({isLoad: true})} src={this.state.cover}/>
+                    <img className="cover" onLoad={() => this.setState({isLoad: true})} src={this.state.cover} alt=""/>
                     <div className="details">
                         <Album className="icon"/><p>{this.state.album}</p>
                     </div>
