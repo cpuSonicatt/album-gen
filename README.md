@@ -23,7 +23,7 @@ Generate fake albums and hope they sound like your kinda jam!
 
 - More comprehensive and realistic generation strategies.
   - perhaps using a _phrase_ generator which will hopefully include more articles.
-  - specific combinations of words, like "<colour> <noun>", "<adverb> <verb>" etc.
+  - specific combinations of words, like "\<colour\> \<noun\>", "\<adverb\> \<verb\>" etc.
   - more sources for images, like abstract, vintage, general patterns, etc.
 - A chance for the album name and/or the artist name to appear as part of the cover.
   - this was attempted but randomly choosing a system font was a pain
