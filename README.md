@@ -1,4 +1,7 @@
 # Fake Album generator
+
+https://albums.cpusonicatt.com
+
 Generate fake albums and hope they sound like your kinda jam!
 
 ### How it works
