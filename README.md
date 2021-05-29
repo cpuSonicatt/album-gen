@@ -25,6 +25,7 @@ Generate fake albums and hope they sound like your kinda jam!
 ### Further improvements
 
 - More comprehensive and realistic generation strategies.
+  - use whatever word generation/dictionaries typing test sites use
   - perhaps using a _phrase_ generator which will hopefully include more articles.
   - specific combinations of words, like "\<colour\> \<noun\>", "\<adverb\> \<verb\>" etc.
   - more sources for images, like abstract, vintage, general patterns, etc.
