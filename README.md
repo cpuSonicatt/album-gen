@@ -28,6 +28,10 @@ Generate fake albums and hope they sound like your kinda jam!
   - perhaps using a _phrase_ generator which will hopefully include more articles.
   - specific combinations of words, like "\<colour\> \<noun\>", "\<adverb\> \<verb\>" etc.
   - more sources for images, like abstract, vintage, general patterns, etc.
+  - numbers at the end of Album names (normal, Roman Numerals, word-ordinals like "first" or "second"). weighted range between 1-7 towards 1.
+  - chance for the album name to be the same as the Artist name. (Like Rush by Rush)
+  - chance for the album name to be "The Very Best of \<artist\>", "\<artist\>'s Greatest Hits", etc.
+  - chance for album to be a live recording ("Live in/at <location> - <year>", alliterate artist and location, like "Rush in Rio")
 - A chance for the album name and/or the artist name to appear as part of the cover.
   - this was attempted but randomly choosing a system font was a pain
   - positioning might be a pain too, perhaps limit it to 6-8 points on the cover.
