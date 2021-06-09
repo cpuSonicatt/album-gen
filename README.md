@@ -28,7 +28,8 @@ Generate fake albums and hope they sound like your kinda jam!
   - use whatever word generation/dictionaries typing test sites use
   - perhaps using a _phrase_ generator which will hopefully include more articles.
   - specific combinations of words, like "\<colour\> \<noun\>", "\<adverb\> \<verb\>" etc.
-  - more sources for images, like abstract, vintage, general patterns, etc.
+  - more sources for images, like abstract, vintage, general patterns, etc
+    - [GIFs Galore CD-ROM from 1992](https://archive.org/details/GifsGalore_Aug92)
   - numbers at the end of Album names (normal, Roman Numerals, word-ordinals like "first" or "second"). weighted range between 1-7 towards 1.
   - chance for the album name to be the same as the Artist name. (Like Rush by Rush)
   - chance for the album name to be "The Very Best of \<artist\>", "\<artist\>'s Greatest Hits", etc.
