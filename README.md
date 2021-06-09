@@ -35,10 +35,13 @@ Generate fake albums and hope they sound like your kinda jam!
   - chance for the album name to be "The Very Best of \<artist\>", "\<artist\>'s Greatest Hits", etc.
   - chance for album to be a live recording ("Live in/at \<location\> - \<year\>", alliterate artist and location, like "Rush in Rio")
 - A chance for the album name and/or the artist name to appear as part of the cover.
-  - this was attempted but randomly choosing a system font was a pain
+  - ~~this was attempted but randomly choosing a system font was a pain~~ ready to commit
   - positioning might be a pain too, perhaps limit it to 6-8 points on the cover.
   - can change the size, kerning, weight of the font, but not the font itself.
 - A chance for the 'parental advisory' sticker to be present
   - should just be able to slap an image on the cover, at set locations.
 - Mobile support.
   - looks like ass on mobile lol
+- General code improvements
+  - Have a rule sheet to choose from instead of a messy if-else tree
+  - Move the album art and details to its own component so refreshing the code isn't jarring
