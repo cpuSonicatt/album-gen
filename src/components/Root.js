@@ -8,9 +8,8 @@ import { Cached } from "@material-ui/icons"
 import chroma from "chroma-js";
 import AlbumChanceTable from '../js/AlbumChanceTable';
 import webfont from 'webfontloader';
+import AlbumInfo from "./AlbumInfo"
 
-
-const AlbumInfo = React.lazy(() => import("./AlbumInfo"));
 const API_KEY = 'AIzaSyDDiO8nLVRMDaXwrJp61Cdcar5gFmmiR1Q'; //change me
 
 
