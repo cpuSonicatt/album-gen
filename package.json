@@ -5,16 +5,25 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@material/progress-indicator": "^13.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "chroma-js": "^2.1.2",
+    "color.js": "^1.2.0",
+    "colorthief": "^2.3.2",
     "name-creator": "^3.0.3",
     "node-random-name": "^1.0.1",
+    "random-google-font": "^0.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-preload-image": "^1.0.7",
     "react-scripts": "^3.4.1",
     "react-typist": "^2.0.5",
-    "unique-names-generator": "^4.5.0"
+    "sentencer": "^0.2.1",
+    "unique-names-generator": "^4.5.0",
+    "webfont": "^11.2.26",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
