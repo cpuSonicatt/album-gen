@@ -1,6 +1,13 @@
-import Sentencer from 'sentencer'
 import { uniqueNamesGenerator, adjectives, animals, colors } from "unique-names-generator"
 import Generate from "name-creator"
+import nouns from "../resources/words/nouns"
+import adjectivez from "../resources/words/adjectives"
+import pluralize from "pluralize"
+import randy from "randy"
+import articals from "articles"
+import fake from "fake-words"
+import randomName from "random-name"
+import faker from "faker"
 
 
 // eslint-disable-next-line no-extend-native
@@ -17,15 +24,29 @@ export default class AlbumChanceTable {
     }
 
     init(artist) {
+              
         this.table.push(
             { value: uniqueNamesGenerator({length: Math.ceil(Math.random() * 2), dictionaries: [adjectives, animals, colors], style: "capital", separator: " "}), weight: 10 },
+
             { value: Generate({words: 1 + Math.random() * 3}).spaced.toProperCase(), weight: 10 },
-            { value: Sentencer.make("The {{ noun }}").toProperCase(), weight: 10 },
-            { value: Sentencer.make("{{ nouns }}").toProperCase(), weight: 10 },
-            { value: Sentencer.make("{{ adjective }}").toProperCase(), weight: 10 },
-            { value: Sentencer.make("{{ an_adjective }} {{ noun }}").toProperCase(), weight: 10 },
-            { value: Sentencer.make("{{ noun }}{{ noun }}").toProperCase(), weight: 2 },
-            { value: artist, weight: 2 })
+
+            { value: `The ${randy.choice(nouns)}`.toProperCase(), weight: 10 },
+            { value: `${randy.choice(nouns)}`.toProperCase(), weight: 10 },
+            { value: `${pluralize(randy.choice(nouns))}`.toProperCase(), weight: 10 },
+            { value: `${randy.choice(adjectivez)}`.toProperCase(), weight: 10 },
+            { value: `${articals.articlize(randy.choice(adjectivez))} ${randy.choice(nouns)}`.toProperCase(), weight: 10 },
+            { value: `${randy.choice(adjectivez)} and ${randy.choice(adjectivez)}`.toProperCase(), weight: 10 },
+            { value: `${randy.choice(nouns)}${randy.choice(nouns)}`.toProperCase(), weight: 2 },
+
+            { value:  `Live at ${faker.address.city()}`, weight: 1},
+            { value:  `Live at the ${randomName.place()}`, weight: 1},
+            
+            { value: `${artist}: Greatest Hits`, weight: 1000 },
+            { value: `The Very Best of ${artist}`, weight: 1000 },
+
+            { value: fake.word().toProperCase(), weight: 2 },
+
+            { value: artist, weight: 5 })
         this.calcTotal()
     }
 
